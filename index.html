@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <META HTTP-EQUIV="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f2441e3b74.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <!-- HEADER SECTION--> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bards" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hello, I am <br><span>Karim Elbishouty</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Profile_Picture.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A fresh graduate from the University of Nottingham with a passion for Artificial Intelligence. With a strong background in multiple different
+                        programming languages across multiple different fields in computer science, I am looking for a role where I can grow and learn from
+                        experienced team members while utilizing my experience from my previous projects</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="tab-sub-title">Programming Languages</span><br>Python, C, Java, C#, SQL, PL/SQL, HTML, CSS, Javascript</li>
+                            <li><span class="tab-sub-title">Programming Skills</span><br>Machine Learning, Optimization, Debugging, Software Maintenance, Algorithms, Data Structures</li>
+                            <li><span class="tab-sub-title">Tools</span><br>Git, Matlab, Visual Studio, Visual Studio Code, MySQL, PyGame, VMWare Workstation</li>
+                            <li><span class="tab-sub-title">Other Skills</span><br>Leadership, Communication, Teamwork, Critical Thinking, Problem Solving, Remote Work</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="tab-sub-title">Consulting Department Summer Internship Program</span><br><a href="https://egabifsi.com">EgabiFSI</a><span class="experience-margin">July 2022 - August 2022</span></li>
+                            <li>•Learned PL/SQL in order to create and manipulate databases<br>•Used PL/SQL and virtual machine software to set up a database server using Oracle Linux.<br>•Proactively worked together in a team to produce desirable results</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="tab-sub-title">Bachelor of Science with Honors Computer Science with Artificial Intelligence</span><br><a href="https://www.nottingham.edu.my">University of Nottingham Malaysia</a><span class="experience-margin">September 2020 - July 2023</span></li>
+                            <li>Graduated with a Second Class First Division Degree</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO SECTION-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/sql.jpg">
+                    <div class="layer">
+                        <h3>SQL</h3>
+                        <p>Used SQL and PL/SQL in order to create and manipulate databases.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/tetris.png">
+                    <div class="layer">
+                        <h3>Game Development</h3>
+                        <p>Coded Snake and Tetris using PyGame and compared heuristic and reinforcement learning solutions to those games.</p>
+                        <a href="https://github.com/KarimE92/Heuristic-and-Reinforcement-Solutions-for-Simple-Games"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/unitygame.png">
+                    <div class="layer">
+                        <h3>Procedural Generation</h3>
+                        <p>Created a simple game using Unity and coded procedural generation for the game's levels.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/KarimE92" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- CONTACT ME SECTION-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:karimelbishouty@hotmail.com"><i class="fa-solid fa-envelope"></i> karimelbishouty@hotmail.com</a></p>
+                    <p><a href="tel:+201011737298"><i class="fa-solid fa-phone"></i>+201011737298</a></p>
+                    <div class="social-icons">
+                        <a href="https://github.com/KarimE92"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/karim-elbishouty-8952a8260/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/Karim_Elbishouty_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        </script>
+        <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz2oT9fI3m9bztVsuPkoCmZGi-8AXsUPc-2nRgsqI7nZycGxqTTUkDY3IZxBL9Lgx2owA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Submission Successful"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    </body>
+</html>
